@@ -1,3 +1,5 @@
+"use client";
+
 import CTA from "./CTA";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
