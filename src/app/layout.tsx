@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/Header";
 
 const commonFont = localFont({
   src: "../../public/fonts/upheaval-tt-brk/upheavtt.ttf",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${commonFont.className} antialiased`}>{children}</body>
+      <body className={`${commonFont.className} antialiased`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

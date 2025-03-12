@@ -18,7 +18,7 @@ export default function MidContent() {
             Launch your projects swiftly and securely on Axelar infrastructure
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 text-center">
+          <div className="mt-8 flex flex-wrap items-center justify-start gap-4 text-center">
             <Link
               href="#"
               className="flex min-h-full items-center justify-between bg-[url(/bg-button-apply.png)] bg-contain bg-center bg-no-repeat"
@@ -32,7 +32,7 @@ export default function MidContent() {
               href="#"
               className="flex min-h-full items-center justify-between bg-[url(/bg-button-buyBuff.png)] bg-contain bg-center bg-no-repeat"
             >
-              <Button className="mb-2 h-full w-full px-10 py-2 text-4xl [text-shadow:1px_2px_0px_0px_rgba(208,_134,_47,_1)]">
+              <Button className="mb-2 h-full w-full px-2 py-2 text-4xl [text-shadow:1px_2px_0px_0px_rgba(208,_134,_47,_1)]">
                 <span className="">Buy $BUFFAST </span>
               </Button>
             </Link>

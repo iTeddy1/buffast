@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const links = [
   { name: "HOME", path: "/", bullet: false },
-  { name: "Donate", path: "/", bullet: true },
-  { name: "Stake", path: "/", bullet: true },
-  { name: "Vesting", path: "/", bullet: false },
+  { name: "Donate", path: "/donate", bullet: true },
+  { name: "Stake", path: "/stake", bullet: true },
+  { name: "Vesting", path: "/vesting", bullet: false },
 ];
 
 export default function Navbar() {
