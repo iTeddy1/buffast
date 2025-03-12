@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${commonFont.className} antialiased`}>
+      <body className={`${commonFont.className} relative antialiased`}>
         <Header />
         <main>{children}</main>
       </body>

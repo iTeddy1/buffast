@@ -29,13 +29,13 @@ export default function ChooseWeapon() {
   const [selectedWeapon, setSelectedWeapon] = useState(weapons[0]);
   return (
     <div>
-      <ul className="mx-4 flex flex-col items-center gap-8">
+      <ul className="flex w-24 flex-col items-center gap-8">
         {weapons.map((weapon) => (
           <li
-            className="relative border-[3.14px] border-[#E2791A] bg-[#FDC840] shadow-[2.1px_2.1px_0px_0px_rgba(205,_203,_184,_0.25)]"
+            className="relative max-w-[96px] border-[3.14px] border-[#E2791A] bg-[#FDC840] shadow-[2.1px_2.1px_0px_0px_rgba(205,_203,_184,_0.25)]"
             key={weapon.name}
           >
-            <span onClick={() => setSelectedWeapon(weapon)}>
+            <span className="size-[90px]" onClick={() => setSelectedWeapon(weapon)}>
               <Image
                 src={weapon.image}
                 height={weapon == selectedWeapon ? 90 : 60}
