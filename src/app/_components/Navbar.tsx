@@ -16,7 +16,7 @@ const links: LinkProps[] = [
 
 export default function Navbar() {
   return (
-    <>
+    <nav>
       <ul className="mx-auto my-2 flex justify-center gap-4">
         {links.map((link) => (
           <li className="min-w-24 px-1.5 py-1 text-center text-xl hover:text-rose-600" key={link.name}>
@@ -26,11 +26,11 @@ export default function Navbar() {
                   <Image src="/fire-bullet.png" width={14} height={22} alt="bullet" />
                 </span>
               )}
-              <span>{link.name}</span>
+              <span className="font-pixel">{link.name}</span>
             </Link>
           </li>
         ))}
       </ul>
-    </>
+    </nav>
   );
 }

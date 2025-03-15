@@ -1,10 +1,10 @@
 "use client";
 
 import { useActiveWalletChain, useSwitchActiveWalletChain } from "thirdweb/react";
-import { optimism, polygon, ethereum, Chain } from "thirdweb/chains";
+import { polygon, ethereum, Chain, blast, anvil } from "thirdweb/chains";
 import Image from "next/image";
 
-const chainOptions: Chain[] = [optimism, polygon, ethereum];
+const chainOptions: Chain[] = [blast, polygon, ethereum, anvil];
 
 const ChainSwitcher = () => {
   const activeChain = useActiveWalletChain();
@@ -12,7 +12,6 @@ const ChainSwitcher = () => {
 
   const handleSwitch = async (chainId: number) => {
     const chain = chainOptions.find((c) => c.id === chainId);
-    console.log(chain);
     if (!chain) return;
     switchChain(chain);
   };
@@ -20,7 +19,7 @@ const ChainSwitcher = () => {
   return (
     <div className="relative flex flex-col items-center">
       <select
-        defaultValue={activeChain?.id}
+        value={activeChain?.id}
         onChange={(e) => handleSwitch(+e.target.value)}
         className="relative appearance-none rounded-full border-[3px] border-[#FFBC39] bg-[#291B0B] px-10 py-3 text-white shadow-[3px_3px_0px_0px_#B96024] focus:ring-0 focus:outline-none"
         name="chain-switcher"

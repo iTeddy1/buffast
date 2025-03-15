@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
 import Header from "./_components/Header";
+import "./globals.css";
 import { ThirdwebProvider } from "thirdweb/react";
 
 const commonFont = localFont({
